@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_front_cover"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:src="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="10dp"
+                    android:shadowColor="@color/cl_333333"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"
+                    android:textColor="@color/cl_e6ffffff"
+                    android:textSize="@dimen/font_size_13"
+                    android:textStyle="bold"
+                    tools:text="东戴河冬天会下雪吗？下雪漂亮吗？那鬼才知沪高铁热交换核桃仁金龟换酒看后感" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_title"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="6dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="6dp"
+                            android:drawableStart="@drawable/mine_play_img"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_11"
+                            tools:text="458" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_favorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:drawablePadding="6dp"
+                            android:drawableStart="@drawable/mine_favorite_img"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_11"
+                            tools:text="458" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:drawablePadding="6dp"
+                            android:drawableStart="@drawable/mine_share_img"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_11"
+                            tools:text="458" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/cl_88000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_failure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="视频上传失败"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/again_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_failure"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_outer_line_white"
+                    android:text="继续上传"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/again_upload"
+                    android:layout_alignTop="@id/tv_failure"
+                    android:background="@drawable/shape_outer_line_white"
+                    android:text="删除"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

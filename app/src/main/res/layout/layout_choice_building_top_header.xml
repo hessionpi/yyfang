@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:clipChildren="false"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_building"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                ></android.support.v4.view.ViewPager>
+
+            <com.yiyanf.fang.ui.widget.CircleIndicator
+                android:id="@+id/banner_ads_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:gravity="center">
+
+            </com.yiyanf.fang.ui.widget.CircleIndicator>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/iv_forecast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon_choice_building" />
+
+            <com.yiyanf.fang.ui.widget.BuildingMarqueeView
+                android:id="@+id/marquee_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/iv_forecast"
+                app:mvAnimDuration="1000"
+                app:mvInterval="3000"
+                >
+
+            </com.yiyanf.fang.ui.widget.BuildingMarqueeView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

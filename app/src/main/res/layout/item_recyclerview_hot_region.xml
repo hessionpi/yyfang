@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="9dp"
+    android:background="@drawable/hot_region_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="22"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_area_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="东戴河"
+            android:textColor="@color/cl_406599"
+            android:textSize="@dimen/font_size_15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tv_price_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12000-18000"
+                android:textColor="@color/cl_ec6858"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元/平"
+                android:textColor="@color/cl_ec6858"
+                android:textSize="@dimen/font_size_11" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="在售"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京最近的海边独家圣地"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_00bceb"
+            android:gravity="center"
+            android:drawableLeft="@drawable/icon_recommend"
+            android:drawablePadding="5dp"/>
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离北京300km"
+            android:layout_marginTop="7dp"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/cl_333333"
+            android:gravity="center"
+            android:drawableLeft="@drawable/icon_location"
+            android:drawablePadding="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_area_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:gravity="left|center_vertical"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="住宅"
+                android:textColor="@color/cl_f86b4a"
+                android:textSize="@dimen/font_size_9"
+                android:background="@drawable/shape_label1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="五证齐全"
+                android:textColor="@color/cl_1ccec8"
+                android:textSize="@dimen/font_size_9"
+                android:background="@drawable/shape_label2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="车位充足"
+                android:textColor="@color/cl_53c3ed"
+                android:textSize="@dimen/font_size_9"
+                android:background="@drawable/shape_label3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="花园洋房"
+                android:textColor="@color/cl_ffa50f"
+                android:textSize="@dimen/font_size_9"
+                android:background="@drawable/shape_label4"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_amount_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="楼盘：12"
+                android:textColor="@color/cl_406599"
+                android:textSize="@dimen/font_size_10" />
+
+            <TextView
+                android:id="@+id/tv_amount_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="视频：09"
+                android:textColor="@color/cl_406599"
+                android:textSize="@dimen/font_size_10" />
+
+            <TextView
+                android:id="@+id/tv_amount_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="直播：23"
+                android:textColor="@color/cl_406599"
+                android:textSize="@dimen/font_size_10" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

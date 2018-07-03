@@ -1,0 +1,306 @@
+<resources>
+    <string name="app_name">壹眼房</string>
+    <string name="system_error">系统错误</string>
+
+    <string name="loading">努力加载中……</string>
+    <string name="press_again_exit">再点击一次退出</string>
+
+    <string name="nav_home">首页</string>
+    <string name="nav_video">视频</string>
+    <string name="nav_publish">发布</string>
+    <string name="nav_building">楼盘</string>
+    <string name="nav_mine">我的</string>
+
+    <string name="hot_recommend">热门推荐</string>
+    <string name="my_attention">我关注的</string>
+    <string name="live">精彩直播</string>
+    <string name="living">正在直播中</string>
+
+    <string name="complete_user_info">完善资料</string>
+    <string name="forget_password">忘记密码</string>
+
+    <string name="operation_guide">壹眼房操作指南</string>
+    <string name="course_all">全部必看教程</string>
+    <string name="live_course">直播教程</string>
+    <string name="video_course">视频教程</string>
+    <string name="house_event">看房活动</string>
+    <string name="initiate_live">发起直播</string>
+    <string name="publish_video">发布视频</string>
+    <string name="publishing">正在发布中</string>
+    <string name="publish_fail">发布失败</string>
+    <string name="publish_dynamic">发布动态</string>
+    <string name="select_video_catagory">选择视频分类</string>
+    <string name="record_warning">确定放弃当前拍摄进度？</string>
+    <string name="edit_cover_warning">确定放弃编辑封面？</string>
+    <string name="quit_publish_warning">确定放弃发布视频？</string>
+    <string name="delete_part_warning">确定删除上一段视频？</string>
+    <string name="select_area">选择区域</string>
+    <string name="select_building">选择楼盘</string>
+    <string name="all_buildings">全部楼盘</string>
+    <!-- msgadapter -->
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+
+    <string name="message">消息</string>
+    <string name="notification">通知</string>
+    <string name="interactive_msg">互动消息</string>
+
+    <!-- IM -->
+    <string name="summary_image">[图片]</string>
+    <string name="summary_voice">[语音]</string>
+    <string name="summary_video">[小视频]</string>
+    <string name="summary_file">[文件]</string>
+    <string name="summary_friend_add">请求添加好友</string>
+    <string name="summary_friend_added">我已添加</string>
+    <string name="summary_friend_add_me">请求添加</string>
+    <string name="summary_friend_recommend">推荐添加</string>
+    <string name="summary_me">我</string>
+    <string name="save_fail">保存失败</string>
+    <string name="save_exist">文件已存在</string>
+    <string name="save_succ">保存成功</string>
+    <string name="file_preview">文件预览</string>
+    <string name="download_fail">下载失败</string>
+    <string name="downloading">正在下载，请稍候</string>
+
+    <string name="conversation_draft">[草稿]</string>
+    <string name="conversation_system_friend">新朋友</string>
+
+    <string name="chat_up_finger">手指上滑，取消发送</string>
+    <string name="confirm">确定</string>
+    <string name="chat_press_talk">按住 说话</string>
+    <string name="chat_release_send">松开 结束</string>
+    <string name="chat_image">图片</string>
+    <string name="chat_file">文件</string>
+    <string name="chat_photo">拍摄</string>
+    <string name="chat_video">小视频</string>
+    <string name="chat_audio_too_short">录音过短，请重试</string>
+    <string name="chat_video_too_short">录制过短，请重试</string>
+    <string name="chat_resend">重新发送</string>
+    <string name="chat_del">删除</string>
+    <string name="tips_delete_video_has_publish">确定要删除吗？</string>
+    <string name="chat_save">保存</string>
+    <string name="chat_copy">复制</string>
+    <string name="copy_to_clipboard">已复制到粘贴板</string>
+    <string name="chat_file_too_large">文件过大，发送失败</string>
+    <string name="chat_file_not_exist">文件不存在，发送失败</string>
+    <string name="chat_image_preview_title">图片预览</string>
+    <string name="chat_image_preview_send">发送</string>
+    <string name="chat_image_preview_load_err">图片加载失败</string>
+    <string name="chat_image_preview_ori">原图发送</string>
+    <string name="chat_typing">对方正在输入…</string>
+    <string name="chat_content_bad">内容含有敏感词</string>
+
+    <string name="profile_detail">详细资料</string>
+    <string name="file_not_found">未找到文件，请稍后重试</string>
+    <string name="kick_logout">你的账号已在其他终端登录,重新登录</string>
+    <!-- IM is end -->
+
+    <string name="apply_live">申请直播</string>
+    <string name="select_live">选择直播</string>
+    <string name="apply_live_online">在线申请直播</string>
+    <string name="apply_live_call">电话申请直播</string>
+
+    <string name="select_orientation">选择屏幕方向</string>
+    <string name="orientation_horizontal">横屏直播</string>
+    <string name="orientation_vertical">竖屏直播</string>
+    <string name="live_advice">为了更好地直播效果，建议您横屏直播。</string>
+    <string name="live_start">开始直播</string>
+    <string name="vertical_warning">您选择了竖屏直播，请确保您的屏幕已经是竖屏状态再点击开始直播</string>
+    <string name="horizontal_warning">您选择了横屏直播，请确保您的屏幕已经是横屏状态再点击开始直播</string>
+    <string name="clear">知道了</string>
+
+    <string name="apply_hint_area">选择直播区域（必选）</string>
+    <string name="apply_hint_building">选择直播楼盘（必选）</string>
+    <string name="apply_hint_starttime">选择直播开始时间</string>
+    <string name="apply_hint_title">为本次直播起一个好听的标题（5&#8211;30个字）</string>
+    <string name="apply_hint_live_description">您可以说说本次直播的重点内容（可不填）</string>
+
+    <string name="commit">提交</string>
+    <string name="live_protocol"> 《壹眼房用户认证直播协议》</string>
+    <string name="apply_explanation">*提示:\n您提交额申请是您的直播意愿，壹眼房直播运营人员会与您联系，协助您做好直播标题、封面，并完善直播流程、细节，并确定最适合的开播日期和时间,力争让您直播最精彩的一面呈现给购房用户</string>
+
+    <string name="load_failed">加载失败</string>
+    <string name="no_network">当前无网络，请检查网络设置</string>
+    <string name="tips_reload_pull">加载失败，下拉屏幕重新加载</string>
+    <string name="tips_reload">加载失败，点击屏幕重新加载</string>
+    <string name="load_again">重新加载</string>
+    <string name="send">发送</string>
+    <string name="dialog_input_text_hint">开启弹幕互动吧</string>
+    <string name="live_end_ask_tips">确定结束直播?</string>
+    <string name="live_end_tips">直播已结束</string>
+    <string name="live_achievement">本场直播成就</string>
+    <string name="live_time_tips">直播时长</string>
+    <string name="live_members_tips">观看人数</string>
+    <string name="live_admires_tips">获赞数量</string>
+    <string name="btn_return_home">返 回</string>
+    <string name="tips_playback_create">本场直播回放正在生成中，您可以在5分钟后查看回放列表</string>
+
+    <!--  -->
+    <string name="video_replay">重播</string>
+    <string name="share_to">分享到</string>
+    <string name="wx_center">朋友圈</string>
+    <string name="wx_friend">微信</string>
+    <string name="report">举报</string>
+    <string name="belong_to_building">所属楼盘</string>
+    <string name="belong_to_area">所属区域</string>
+    <string name="avg_price">均价：</string>
+    <string name="related_video">相关视频</string>
+    <string name="reply">回复</string>
+    <string name="all_comment">全部评论</string>
+    <string name="comment_empty">亲，快来留言吧</string>
+    <string name="hint_write_comment">说点什么… </string>
+    <string name="all_reply">全部回复</string>
+
+    <string name="live_forecast">直播预告</string>
+    <string name="reserve_live">预约观看</string>
+    <string name="reserve_cancel">取消预约</string>
+    <string name="yyf_video">壹眼视频</string>
+    <string name="live_playback">直播/回放</string>
+    <string name="sort">排序</string>
+    <string name="cover_edit">修改封面</string>
+    <string name="cover_select">封面选择</string>
+    <string name="choose_best_cover">选择一张您认为比较好的封面</string>
+    <string name="video_record">拍摄视频</string>
+    <string name="video_import">导入视频</string>
+    <string name="delete">删除</string>
+    <string name="finish">完成</string>
+    <string name="upload_again">重新上传</string>
+    <string name="uploading">视频上传中</string>
+    <string name="warning_upload_again">视频上传失败</string>
+    <string name="warning_upload_give_up">确定要放弃发布视频内容吗？</string>
+
+    <string name="category">类别</string>
+    <string name="city_group">城市群</string>
+    <string name="area">区域</string>
+
+    <string name="sort_default">默认排序</string>
+    <string name="sort_publish_time">最新发布时间</string>
+    <string name="sort_play_count">最多观看次数</string>
+    <string name="sort_comment">最多评论人数</string>
+
+    <string name="camera">拍照</string>
+    <string name="album">从手机相册选择</string>
+    <string name="video_album">视频相册</string>
+
+    <string name="exit_apply_live_warning">是否退出申请直播</string>
+    <string name="exit_publish_video_warning">确定重新导入或拍摄视频吗？</string>
+    <string name="exit_publish_dynamic_warning">是否退出发布动态</string>
+    <string name="publish_no_wifi_warning">您没有连接到wifi，会消耗您%1$s流量，您确定要继续上传吗？</string>
+
+    <string name="play_video_no_wifi_warning">播放将消耗%1$s流量，是否继续播放？</string>
+    <string name="continue_play_video">继续播放</string>
+
+    <string name="hint">提示</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="call">呼叫</string>
+    <string name="exit">退出</string>
+    <string name="exit_login">退出</string>
+    <string name="exit_tips">确定要退出登录吗？</string>
+    <string name="confirm_exit_warning">是否退出填写认证资料?</string>
+    <string name="tip_force_offline">您的帐号已在其它地方登录</string>
+    <string name="exit_auth_name">是否退出实名认证</string>
+    <string name="exit_auth_data">是否退出填写认证资料</string>
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_number">使用手机号登录</string>
+    <string name="password">输入密码</string>
+    <string name="tv_forget_password">忘记密码？</string>
+    <string name="agree_explanation">点击登录即同意</string>
+    <string name="user_explanation">《壹眼房用户服务条款》</string>
+
+    <!--楼盘-->
+    <string name="choice_building">精选新盘</string>
+    <string name="hot_region">区域热点</string>
+    <string name="follow_building">关注楼盘</string>
+    <string name="follow_region">关注区域</string>
+    <string name="more_building_message">更多楼盘信息</string>
+    <string name="building_star">当前楼盘置业顾问明星</string>
+    <string name="ask_here">如何出现在这里</string>
+    <string name="building_explain">免责声明：页面所载内容及数据仅供用户参考和借鉴；圈子讨论、视频，直播内容仅代表用户立场，请谨慎辨别，最终以开发商实际公示为准。</string>
+    <string name="talk">发起评论</string>
+
+    <!--我的-->
+    <string name="mine">我的</string>
+    <string name="favorite">收藏</string>
+    <string name="attention">关注</string>
+    <string name="send_msg">私信</string>
+    <string name="fans">粉丝</string>
+    <string name="mine_home">我的主页</string>
+    <string name="mine_vedio">我的视频</string>
+    <string name="mine_live">我的直播</string>
+    <string name="mine_forecast">我的预约</string>
+    <string name="certification">认证资料</string>
+    <string name="operating_guide">操作指南</string>
+
+    <!--end -->
+
+    <!--设置 -->
+    <string name="settings">设置</string>
+    <string name="change_user_info">修改个人资料</string>
+    <string name="change_password">修改登录密码</string>
+    <string name="msg_remind">消息提醒</string>
+    <string name="open_phone">公开手机号</string>
+    <string name="clear_cache">缓存清理</string>
+    <string name="market_praise">亲，给我们一个好评吧！</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_us">关于我们</string>
+    <string name="version_newer_tips">已经是最新版本</string>
+    <string name="version_downloading">新版本下载中</string>
+    <string name="down_sucess">下载成功</string>
+    <string name="down_fail">下载失败</string>
+
+    <string name="avatar">头像</string>
+    <string name="mobile">登录手机号</string>
+    <string name="fang_id">壹眼房ID</string>
+    <string name="nick_name">姓名/昵称</string>
+    <string name="sex">性别</string>
+    <string name="company">我所在的公司</string>
+    <string name="verified">已认证</string>
+    <string name="introduce">个人简介</string>
+
+    <string name="pwd_old">旧密码 (6&#8211;20位字符)</string>
+    <string name="pwd_new">新密码 (6&#8211;20位字符)</string>
+    <string name="pwd_confirm">确认密码 (6&#8211;20位字符)</string>
+    <!-- end  -->
+
+    <string name="read_know">立即查看</string>
+
+    <string name="beauty">美颜</string>
+    <string name="whitening">美白</string>
+    <string name="facefilter">滤镜</string>
+    <string name="find_new_version">发现新版本</string>
+    <string name="update_later">暂不更新</string>
+    <string name="update_now">立即更新</string>
+
+
+    <string name="search_input">请检查您的输入是否正确</string>
+    <string name="search_key">缩短关键词或更换关键词</string>
+
+
+    <string name="pick_videos">选择视频</string>
+
+
+    <string name="hint_publish_video_title">输入一个贴切的标题</string>
+    <string name="video_category">视频分类</string>
+    <string name="attach_area">相关区域</string>
+    <string name="attach_building">相关楼盘</string>
+    <string name="hint_publish_video_desc">你还可以说点什么……</string>
+    <string name="current_location">当前定位</string>
+    <string name="locate_fail">定位失败</string>
+    <string name="choose_history">历史选择</string>
+    <string name="without_wifi_tips">当前为非wifi环境，是否使用流量观看视频</string>
+    <string name="tips_delete_conversation">您将无法再主动与其聊天，确认要删除对话吗？</string>
+    <string name="quit_play">放弃播放</string>
+    <string name="continue_play">继续播放</string>
+    <string name="notice">注意</string>
+    <string name="read_reply">查看回复</string>
+    <string name="attention_empty_tips">关注列表空空的，\n快去关注感兴趣的人吧</string>
+
+    <string name="video_edit">编辑视频</string>
+    <string name="video_edit_segment">请拖拽两侧滑块选择剪裁区域</string>
+
+    <string name="tips_permission">该功能需要相机，麦克风权限，请在设置里开启</string>
+    <string name="tips_video_not_exits">视频不见了</string>
+</resources>

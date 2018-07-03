@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.SettingsActivity">
+
+    <com.yiyanf.fang.ui.widget.ToolbarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionLeftBackground="@drawable/back_img"
+        app:actionRightBackground="@drawable/nav_top_msg_settings"
+        app:titleText="@string/settings">
+
+    </com.yiyanf.fang.ui.widget.ToolbarView>
+
+    <!-- 修改个人资料 -->
+    <FrameLayout
+        android:id="@+id/fl_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="top"
+            android:background="@color/colorLine" />
+
+        <ImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_change_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end|center_vertical"
+            android:drawableEnd="@drawable/mine_more_img"
+            android:drawablePadding="6dp"
+            android:text="@string/change_user_info"
+            android:textColor="@color/cl_999999"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorLine" />
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableEnd="@drawable/mine_more_img"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/change_password"
+            android:textColor="@color/cl_222222"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <CheckedTextView
+            android:id="@+id/ct_open_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:checkMark="@drawable/selector_ct_setting_remind"
+            android:checked="false"
+            android:filterTouchesWhenObscured="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/open_phone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/cl_222222"
+            android:textSize="@dimen/font_size_13" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <CheckedTextView
+            android:id="@+id/ct_msg_remind"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:checkMark="@drawable/selector_ct_setting_remind"
+            android:checked="true"
+            android:filterTouchesWhenObscured="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/msg_remind"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/cl_222222"
+            android:textSize="@dimen/font_size_13" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <FrameLayout
+            android:id="@+id/fl_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/clear_cache"
+                android:textColor="@color/cl_222222"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:drawableEnd="@drawable/mine_more_img"
+                android:drawablePadding="6dp"
+                android:textColor="@color/cl_999999"
+                android:textSize="12sp"
+                tools:text="18.5 MB" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_praise"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableEnd="@drawable/mine_more_img"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/market_praise"
+            android:textColor="@color/cl_222222"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <FrameLayout
+            android:id="@+id/fl_check_version"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/check_update"
+                android:textColor="@color/cl_222222"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_version_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:drawableEnd="@drawable/mine_more_img"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                tools:text="当前版本1.2.0"
+                android:textColor="@color/cl_999999"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableEnd="@drawable/mine_more_img"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/about_us"
+            android:textColor="@color/cl_222222"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:text="@string/exit_login"
+        android:textColor="@color/cl_222222"
+        android:textSize="@dimen/font_size_14" />
+</LinearLayout>

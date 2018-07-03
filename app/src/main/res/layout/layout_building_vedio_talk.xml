@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--楼盘视频-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_video_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="6dp"
+                android:drawableStart="@drawable/shape_vertical_line"
+                android:gravity="left|center_vertical"
+                android:text="楼盘视频（0）"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_publish_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_publish_video"
+                android:drawablePadding="6dp"
+                android:text="@string/publish_video"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_building_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_video"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="查看更多视频"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_12" />
+
+    </LinearLayout>
+
+    <!--楼盘圈子讨论区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_talk_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="6dp"
+                android:drawableStart="@drawable/shape_vertical_line"
+                android:gravity="left|center_vertical"
+                android:text="楼盘圈子讨论区（5）"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/start_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_talk"
+                android:drawablePadding="6dp"
+                android:text="@string/talk"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_talk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_talk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="查看更多讨论"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_12" />
+
+    </LinearLayout>
+
+</LinearLayout>

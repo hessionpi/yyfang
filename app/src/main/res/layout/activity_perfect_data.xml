@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.PerfectDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:gravity="center_vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="完善资料"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_dddddd" />
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/icon_man_head_circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="您可以换一个您喜欢的头像"
+        android:textColor="@color/cl_999999"
+        android:textSize="@dimen/font_size_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="昵称"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_14" />
+
+        <EditText
+            android:id="@+id/cet_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:textColor="@color/cl_333333"
+            android:textColorHint="@color/cl_999999"
+            android:textCursorDrawable="@null"
+            android:maxLength="16"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/cl_e5e5e5" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="性别"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_14" />
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_rg_sex"
+                android:checked="true"
+              />
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_man" />
+
+            <RadioButton
+                android:id="@+id/rb_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_rg_sex"
+                android:layout_marginLeft="20dp"
+               />
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_woman" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/cl_e5e5e5" />
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="如果您从事房产相关产业，您可以选择认证为置业顾问"
+        android:textColor="@color/cl_666666"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="为广大房友提供最一线的房产资源及服务"
+        android:textColor="@color/cl_666666"
+        android:textSize="@dimen/font_size_12" />
+
+    <CheckBox
+        android:id="@+id/cb_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="我要认证"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_12"
+        android:checked="false"
+        android:drawableStart="@drawable/selector_cb_plus"
+        android:drawablePadding="8dp"
+        android:button="@null"
+        />
+-->
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/cb_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="6dp"
+            android:checked="false"
+            android:button="@drawable/selector_cb_plus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要认证"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>-->
+
+
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_bg_green"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+
+</LinearLayout>

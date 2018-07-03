@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d0d0d"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+    <!--<com.yiyanf.fang.ui.widget.ToolbarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:actionLeftBackground="@drawable/image_back"
+        app:actionRightText="@string/publish_video"
+        app:titleText="@string/mine_vedio"></com.yiyanf.fang.ui.widget.ToolbarView>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent">
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+              android:src="@drawable/editer_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="裁剪"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_17" />
+
+        <TextView
+            android:id="@+id/next_step"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_stop_bg"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/cut_ll"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="visible">
+
+        <com.yiyanf.fang.ui.widget.videoeditor.TCVideoEditView
+            android:id="@+id/editView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="30dp"
+            android:button="@drawable/back_img"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/partial_loading"
+            />
+
+        <TextView
+            android:id="@+id/tv_upload_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_13"
+            android:textColor="@color/white"
+            android:text="12%"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

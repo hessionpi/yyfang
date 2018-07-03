@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.MineVideoActivity">
+
+    <com.yiyanf.fang.ui.widget.ToolbarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionLeftBackground="@drawable/back_img"
+        app:actionRightText="@string/publish_video"
+        app:titleText="@string/mine_vedio"></com.yiyanf.fang.ui.widget.ToolbarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e5e5e5" />
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="视频"
+                android:textColor="@color/cl_00bceb"
+                android:textSize="@dimen/font_size_13" />
+
+            <View
+                android:id="@+id/view_video"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/cl_00bceb" />
+        </RelativeLayout>
+
+        <View
+
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/colorLine" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_live_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="回放"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <View
+                android:id="@+id/view_live_back"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/cl_00bceb"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+    </LinearLayout>-->
+    <!--  <ViewStub
+          android:id="@+id/vs_mine_empty"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout="@layout/layout_mine_no_data" />-->
+    <!-- <LinearLayout
+         android:id="@+id/ll_empty"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:visibility="gone">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:src="@drawable/empty_mine"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="空空如也"
+             android:textSize="@dimen/font_size_12"
+             android:layout_marginTop="12dp"
+             android:textColor="@color/cl_bbbbbb"/>
+     </LinearLayout>-->
+    <!--<ViewStub
+        android:id="@+id/vs_mine_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_mine_video" />-->
+    <FrameLayout
+        android:id="@+id/sv_upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_fail_videos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_mine_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/ll_video_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+           android:background="@color/cl_f4f5fa"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/empty_mine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="空空如也"
+                android:textColor="@color/cl_bbbbbb"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </FrameLayout>
+    <!--    <ViewStub
+            android:id="@+id/vs_mine_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_mine_back" />-->
+   <!-- <FrameLayout
+        android:id="@+id/fl_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_mine_liveback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/ll_back_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/cl_f4f5fa"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/empty_mine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="空空如也"
+                android:textColor="@color/cl_bbbbbb"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+
+    </FrameLayout>-->
+</LinearLayout>

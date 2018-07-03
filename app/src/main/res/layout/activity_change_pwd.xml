@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBg"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.SettingsActivity">
+
+    <com.yiyanf.fang.ui.widget.ToolbarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionLeftBackground="@drawable/back_img"
+        app:actionRightBackground="@drawable/nav_top_msg_settings"
+        app:titleText="@string/change_password">
+
+    </com.yiyanf.fang.ui.widget.ToolbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <EditText
+            android:id="@+id/et_pwd_old"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:maxLength="20"
+            android:hint="@string/pwd_old"
+            android:textColorHint="@color/cl_999999"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_14"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"
+            />
+
+        <EditText
+            android:id="@+id/et_pwd_new"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:maxLength="20"
+            android:hint="@string/pwd_new"
+            android:textColorHint="@color/cl_999999"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_14"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"
+            />
+
+        <EditText
+            android:id="@+id/et_pwd_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:maxLength="20"
+            android:hint="@string/pwd_confirm"
+            android:textColorHint="@color/cl_999999"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_14"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14"
+        android:background="@drawable/shape_login_grey_bg"
+        />
+
+
+</LinearLayout>

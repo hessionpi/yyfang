@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv_pick_cover"
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:padding="1dp"
+    android:scaleType="centerCrop"
+    tools:ignore="contentDescription"
+    tools:src="@drawable/start_splash"
+    tools:background="@drawable/ic_cover_selected"
+    >
+
+</ImageView>

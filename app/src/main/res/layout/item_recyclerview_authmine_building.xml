@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="30dp"
+    android:background="@drawable/shape_auth_blue_add_bg"
+    android:gravity="center"
+    android:layout_marginBottom="10dp">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_building"/>
+    <TextView
+        android:id="@+id/building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="东戴河-MOMA白金海"
+        android:textSize="@dimen/font_size_12"
+        android:textColor="@color/cl_00bceb"/>
+</LinearLayout>

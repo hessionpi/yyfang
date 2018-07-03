@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:id="@+id/ll_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/tv_city_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_pull_down"
+            android:gravity="center_vertical"
+            android:text="城市群"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />  </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:gravity="center">
+        <TextView
+            android:id="@+id/tv_average_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_pull_down"
+            android:gravity="center_vertical"
+            android:text="均价"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />  </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+        <TextView
+            android:id="@+id/tv_traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_pull_down"
+            android:gravity="center_vertical"
+            android:text="交通"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />  </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_e5e5e5" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hot_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

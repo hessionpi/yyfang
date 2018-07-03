@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="10dp"
+        tools:src="@drawable/loading" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:layout_alignTop="@id/iv_avatar"
+        tools:text="宋小宝"
+        android:textColor="@color/cl_406599"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:id="@+id/tv_talk_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nickname"
+        android:layout_alignStart="@id/tv_nickname"
+        android:layout_marginTop="10dp"
+        tools:text="小区环境对于居住体验来说十分重要，俗话说：千金买房，万金买邻。"
+        android:textColor="@color/cl_333333"
+        android:textSize="@dimen/font_size_12" />
+
+    <RelativeLayout
+        android:id="@+id/rl_publish_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_talk_text"
+        android:layout_alignStart="@id/tv_talk_text"
+        >
+
+        <TextView
+            android:id="@+id/tv_talk_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            tools:text="9分钟前"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/tv_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_toRightOf="@id/tv_talk_time"
+            android:drawablePadding="5dp"
+            android:text="@string/reply"
+            android:textColor="@color/cl_406599"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="@string/delete"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_999999"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/rl_publish_time"
+        android:background="@color/cl_e5e5e5" />
+</RelativeLayout>

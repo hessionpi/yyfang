@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_sort_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_15"
+        android:textColor="@color/selector_textcolor_category"
+        android:text="@string/sort_default"
+        android:background="@color/white"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLine"
+        />
+
+    <TextView
+        android:id="@+id/tv_sort_publish_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_15"
+        android:textColor="@color/selector_textcolor_category"
+        android:text="@string/sort_publish_time"
+        android:background="@color/white"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLine"
+        />
+
+    <TextView
+        android:id="@+id/tv_sort_play_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_15"
+        android:textColor="@color/selector_textcolor_category"
+        android:text="@string/sort_play_count"
+        android:background="@color/white"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLine"
+        />
+
+    <TextView
+        android:id="@+id/tv_sort_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_15"
+        android:textColor="@color/selector_textcolor_category"
+        android:text="@string/sort_comment"
+        android:background="@color/white"
+        />
+</LinearLayout>

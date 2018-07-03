@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="43dp">
+
+<TextView
+    android:id="@+id/tv_building"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="东戴河-MOMA白金海"
+    android:textColor="@color/cl_00bceb"
+    android:textSize="@dimen/font_size_14" />
+
+<TextView
+    android:id="@+id/delete"
+    android:layout_width="37dp"
+    android:layout_height="15dp"
+    android:text="删除"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:background="@drawable/shape_auth_del_gray_bg"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="10dp"
+    android:textSize="@dimen/font_size_10" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/cl_e5e5e5" />
+</RelativeLayout>

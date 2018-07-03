@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.yiyanf.fang.ui.activity.EditPublishCoverActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/iv_close_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/ic_record_close"
+            tools:ignore="contentDescription"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_titlebar"
+            android:text="@string/cover_select"
+            />
+
+        <Button
+            android:id="@+id/btn_cover_done"
+            android:layout_width="62dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14"
+            android:text="@string/finish"
+            android:background="@drawable/ic_btn_titlebar"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_252525"
+        />
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:src="@drawable/guide_page4"
+        tools:ignore="contentDescription"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_252525"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_front_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        >
+
+        <SeekBar
+            android:id="@+id/cover_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:max="10"
+            android:progress="1"
+            android:thumb="@drawable/ic_thumb_cover_select"
+            android:progressDrawable="@null"
+            />
+    </LinearLayout>-->
+
+
+
+
+</LinearLayout>

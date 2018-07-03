@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f8f8f8"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_all_reply_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:padding="12dp"
+            android:src="@drawable/ic_close"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/cl_333333"
+            android:text="@string/read_reply"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorLine"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_discuss_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_top"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="12dp"
+        android:paddingTop="15dp">
+
+
+        <ImageView
+            android:id="@+id/iv_talker_avatar"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:src="@drawable/icon_man" />
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/iv_talker_avatar"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_talker_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cl_888888"
+                android:textSize="@dimen/font_size_13"
+                tools:text="泪牛满面" />
+
+            <TextView
+                android:id="@+id/tv_talker_publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/cl_b2b2b2"
+                android:textSize="@dimen/font_size_11"
+                tools:text="38分钟前" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_talker_publish_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/iv_talker_avatar"
+            android:layout_alignStart="@id/ll_name"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_14"
+            tools:text="借口接口好男人尽快发给人家看过他居然人家过年天然健康让客入开发健康减肥拉开就看见了会计法，是让你飞哦i人家看尽快呢看你们，人愤怒烤牛肉看见你。"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_all_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_discuss_layout"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/cl_333333"
+        android:text="@string/all_reply"
+        />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_all_reply"
+        android:background="@color/colorLine"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_reply"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider_line"
+        android:layout_above="@+id/ll_publish_reply"
+        android:overScrollMode="never"
+        tools:listitem="@layout/item_layout_comment"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_publish_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_input_reply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:minHeight="31dp"
+            android:maxHeight="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/hint_write_comment"
+            android:textColorHint="@color/cl_cccccc"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13"
+            tools:text="福利苦尽甘来几个人了库添加搞突然离看他那挺们会"
+            android:background="@drawable/shape_publish_comment_input"
+            />
+
+        <TextView
+            android:id="@+id/tv_publish_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="13dp"
+            android:background="@drawable/ic_discuss_send_unable"
+            android:gravity="center"
+            android:text="@string/nav_publish"
+            android:textColor="@color/cl_b2b2b2"
+            android:textSize="@dimen/font_size_13" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.MessageActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="6dp"
+        android:textSize="@dimen/font_size_10"
+        android:textColor="@color/white"
+        tools:text="1月20日"
+        android:background="@drawable/shape_time_notification_msg"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="25dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/bg_notification"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/cl_333333"
+            tools:text="这里试试发货方合计"
+            />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/c9"
+            tools:text="这里试试发货听突然接口能够该接口突然那个软件可能高考题软件就可能给你听人口结构牛头人可能如果人孔盖借款人给他人看过他"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLine"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/mine_more_img"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/cl_333333"
+            android:text="@string/read_know"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

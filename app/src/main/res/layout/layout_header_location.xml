@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBg"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/cl_999999"
+        android:textSize="@dimen/font_size_12"
+        android:text="@string/current_location"
+        />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/cl_666666"
+        android:textSize="@dimen/font_size_13"
+        tools:text="@string/locate_fail"
+        android:background="@color/white"
+        />
+</LinearLayout>

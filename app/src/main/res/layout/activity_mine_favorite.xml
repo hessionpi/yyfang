@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.MineFavoriteActivity">
+    <com.yiyanf.fang.ui.widget.ToolbarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionLeftBackground="@drawable/back_img"
+        app:actionRightText="@string/commit"
+        app:titleText = "我的收藏"
+        >
+    </com.yiyanf.fang.ui.widget.ToolbarView>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+       >
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:src="@drawable/empty_mine"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空空如也"
+            android:textSize="@dimen/font_size_12"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/cl_bbbbbb"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mine_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cl_f4f5fa"
+       android:paddingTop="10dp"></android.support.v7.widget.RecyclerView>
+</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_toolbar"
+    android:background="@color/colorTitlebar"
+    >
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:src="@drawable/back_img"
+        />
+
+    <TextView
+        android:id="@+id/action_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_left"
+        android:textColor="@color/white"
+        tools:text="编辑"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_titlebar"
+        android:text="标题"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/iv_right"
+            tools:text="按钮"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_login_blue_bg"
+            android:textSize="@dimen/font_size_12"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_dddddd"
+        android:layout_alignParentBottom="true"
+        >
+    </View>
+</RelativeLayout>

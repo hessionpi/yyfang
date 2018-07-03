@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBg"
+    tools:context="com.yiyanf.fang.ui.activity.MessageActivity">
+
+    <com.yiyanf.fang.ui.widget.ToolbarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionLeftBackground="@drawable/back_img"
+        app:actionRightBackground="@drawable/nav_top_msg_settings"
+        app:titleText = "@string/interactive_msg"
+        >
+    </com.yiyanf.fang.ui.widget.ToolbarView>
+
+    <com.yiyanf.fang.ui.widget.pull2refresh.PullToRefreshView
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_msg_interactive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:overScrollMode="never"
+            tools:listitem="@layout/recycler_item_interactive_msg"
+            android:background="@color/white"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.yiyanf.fang.ui.widget.pull2refresh.PullToRefreshView>
+
+</LinearLayout>

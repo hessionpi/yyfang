@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:orientation="vertical"
+	android:layout_gravity="bottom">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="12dp"
+		android:layout_marginBottom="12dp"
+		android:text="选择直播开始时间"
+		android:textColor="@color/cl_333333"
+		android:textSize="@dimen/font_size_14"
+		/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:background="@color/cl_dddddd"
+		/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<com.yiyanf.fang.ui.widget.wheel.views.WheelView
+			android:id="@+id/wh_year"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_gravity="center_vertical"
+			 />
+
+		<com.yiyanf.fang.ui.widget.wheel.views.WheelView
+			android:id="@+id/wh_month"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1" />
+
+		<com.yiyanf.fang.ui.widget.wheel.views.WheelView
+			android:id="@+id/wh_day"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1" />
+
+		<com.yiyanf.fang.ui.widget.wheel.views.WheelView
+			android:id="@+id/wh_hour"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1" />
+
+		<com.yiyanf.fang.ui.widget.wheel.views.WheelView
+			android:id="@+id/wh_minute"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/cl_dddddd"
+		/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="42dp"
+		android:orientation="horizontal"
+		>
+
+		<Button
+			android:id="@+id/btn_cancel"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"
+			android:textColor="@color/cl_00bceb"
+			android:textSize="@dimen/font_size_14"
+			android:text="@string/cancel"
+			android:background="@null"
+			/>
+
+		<View
+			android:layout_width="0.5dp"
+			android:layout_height="match_parent"
+			android:background="@color/cl_dddddd"
+			/>
+
+		<Button
+			android:id="@+id/btn_ok"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"
+			android:textColor="@color/cl_00bceb"
+			android:textSize="@dimen/font_size_14"
+			android:text="@string/ok"
+			android:background="@null"
+			/>
+	</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black"
+    >
+
+    <TextView
+        android:id="@+id/expandable_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginTop="6dp"
+        tools:textColor="@color/white"
+        android:lineSpacingMultiplier="1.1"
+        tools:text="The story of a Chinese couple at Oxford University who first met each other as deskmate in middle school and recently married each other has gone viral, southcn.com reported."
+        android:ellipsize="end"
+         />
+
+    <TextView
+        android:id="@+id/expand_collapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@android:color/transparent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        tools:textColor="@color/white"
+        android:drawablePadding="3dp"
+        tools:drawableRight="@drawable/ic_play_video_desc_expand"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

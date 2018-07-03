@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cl_f8f8f8"
+    android:paddingBottom="12dp"
+    android:paddingEnd="12dp"
+    android:paddingStart="12dp"
+    android:paddingTop="15dp">
+
+
+    <ImageView
+        android:id="@+id/iv_replyer_headpic"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:src="@drawable/icon_man" />
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/iv_replyer_headpic"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_reply_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cl_888888"
+            android:textSize="@dimen/font_size_13"
+            tools:text="丝袜奶茶" />
+
+        <TextView
+            android:id="@+id/tv_reply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/cl_d9d9d9"
+            android:textSize="@dimen/font_size_11"
+            tools:text="38分钟前" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/iv_replyer_headpic"
+        android:layout_alignStart="@id/ll_name"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/cl_444444"
+        android:textSize="@dimen/font_size_13"
+        tools:text="借口接口好男人尽快发给人家看过他居然人家过年天然健康让客入开发健康减肥拉开就看见了会计法，是让你飞哦i人家看尽快呢看你们，人愤怒烤牛肉看见你。"
+        />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_below="@id/tv_reply_content"
+        android:layout_alignStart="@id/ll_name"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorLine"
+        />
+
+</RelativeLayout>

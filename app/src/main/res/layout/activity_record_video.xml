@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black20unalpha"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.RecordVideoActivity">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.tencent.rtmp.ui.TXCloudVideoView>
+
+    <com.yiyanf.fang.ui.widget.progress.RecordProgressView
+        android:id="@+id/pb_record"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_record_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/liveshow_item_dot"
+            android:scaleType="fitXY"
+            tools:ignore="contentDescription" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="8dp"
+            android:paddingStart="6dp"
+            android:shadowColor="@color/cl_666666"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_17"
+            android:textStyle="bold"
+            tools:text="00:00" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_record_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_close_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:padding="15dp"
+            android:src="@drawable/ic_record_close"
+            tools:ignore="contentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:padding="10dp"
+                android:src="@drawable/ic_flash_disable"
+                tools:ignore="contentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_switch_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_switch_camera"
+                tools:ignore="contentDescription" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_delete_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_record_delete"
+            android:visibility="gone"
+            tools:ignore="contentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_record_start"
+            tools:ignore="contentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_record_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_record_done"
+            android:visibility="gone"
+            tools:ignore="contentDescription" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_video_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/selector_tab_record"
+            android:drawablePadding="8dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:shadowColor="@color/cl_666666"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="4"
+            android:text="@string/video_record"
+            android:textColor="@color/selector_textcolor_tab_record"
+            android:textSize="@dimen/font_size_15" />
+
+        <RadioButton
+            android:id="@+id/rb_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="false"
+            android:drawableBottom="@drawable/selector_tab_record"
+            android:drawablePadding="8dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:shadowColor="@color/cl_666666"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="4"
+            android:text="@string/video_import"
+            android:textColor="@color/selector_textcolor_tab_record"
+            android:textSize="@dimen/font_size_15" />
+    </RadioGroup>
+
+</FrameLayout>

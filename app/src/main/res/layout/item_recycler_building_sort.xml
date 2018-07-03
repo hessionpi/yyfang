@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="22dp"
+    android:gravity="center"
+    android:layout_marginLeft="9dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/cl_ececec">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="住宅"
+    android:textSize="@dimen/font_size_11"
+    android:textColor="@color/cl_888888"
+    android:layout_marginLeft="8dp"/>
+    <ImageView
+        android:id="@+id/iv_sort_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_sort_close"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"/>
+</LinearLayout>

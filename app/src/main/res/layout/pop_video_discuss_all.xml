@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="468dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_discuss_all_bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="start|center_vertical"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@color/cl_858585"
+            android:text="@string/all_comment"
+            />
+
+        <TextView
+            android:id="@+id/tv_discuss_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@color/cl_858585"
+            tools:text="(100)"
+            />
+
+        <ImageView
+            android:id="@+id/iv_reply_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_close"
+            />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLine"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_discuss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_comment_empty"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/cl_939393"
+            android:text="@string/comment_empty"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_dddddd"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_input_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:minHeight="31dp"
+            android:maxHeight="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/hint_write_comment"
+            android:textColorHint="@color/cl_cccccc"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13"
+            tools:text="福利苦尽甘来几个人了库添加搞突然离看他那挺们会"
+            android:background="@drawable/shape_publish_comment_input"
+            />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="13dp"
+            android:background="@drawable/ic_discuss_send_unable"
+            android:gravity="center"
+            android:text="@string/nav_publish"
+            android:textColor="@color/cl_b2b2b2"
+            android:textSize="@dimen/font_size_13" />
+    </LinearLayout>
+
+
+</LinearLayout>

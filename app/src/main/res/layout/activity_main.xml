@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBg"
+    tools:context="com.yiyanf.fang.ui.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_titlebar"
+        android:background="@color/white"
+        android:elevation="3dp" >
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="9dp"
+            android:src="@drawable/nav_icon_unlogin"
+            tools:ignore="contentDescription"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            >
+
+            <RadioGroup
+                android:id="@+id/rg_video"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb_recommend_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/nav_video"
+                    android:textColor="@color/selector_textcolor_tab"
+                    android:textSize="@dimen/font_size_16"
+                    android:drawablePadding="4dp"
+                    android:drawableBottom="@drawable/selector_tab"
+                    android:checked="true"
+                    android:button="@null"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_attention_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableBottom="@drawable/selector_tab"
+                    android:drawablePadding="4dp"
+                    android:text="@string/attention"
+                    android:textColor="@color/selector_textcolor_tab"
+                    android:textSize="@dimen/font_size_16" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/iv_attentions_unread"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="end"
+                android:background="@drawable/shape_bg_circle_red"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+        <!--  消息提醒  -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="end|top"
+                android:background="@drawable/shape_bg_circle_red"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_10"
+                tools:text="9+"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/iv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/nav_top_message"
+                tools:ignore="contentDescription"
+                />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/video_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:overScrollMode="never">
+
+        </android.support.v4.view.ViewPager>
+
+        <ImageButton
+            android:id="@+id/fb_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/ic_record_background"
+            android:paddingBottom="15dp"
+            android:paddingEnd="18dp"
+            android:paddingStart="18dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_record_circle_inner" />
+    </FrameLayout>
+
+
+</LinearLayout>

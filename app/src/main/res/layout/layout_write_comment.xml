@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:background="@color/cl_fafafa">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cl_dddddd"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_input_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:minHeight="31dp"
+            android:maxHeight="56dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="7dp"
+            android:hint="@string/hint_write_comment"
+            android:textColorHint="@color/cl_cccccc"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13"
+            tools:text="福利苦尽甘来几个人了库添加搞突然离看他那挺们会"
+            android:background="@drawable/shape_publish_comment_input"
+            />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="62dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_13"
+            android:textColor="@color/cl_b2b2b2"
+            android:text="@string/nav_publish"
+            android:background="@drawable/ic_discuss_send_unable"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

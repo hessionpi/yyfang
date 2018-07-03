@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yiyanf.fang.ui.activity.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <com.yiyanf.fang.ui.widget.ClearEditText
+            android:id="@+id/cet_search"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:background="@drawable/search_edittext_shape"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="7.5dp"
+            android:hint="输入关键字"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="50"
+            android:paddingLeft="5.5dp"
+            android:textColor="@color/cl_333333"
+            android:textColorHint="@color/cl_888888"
+            android:textSize="@dimen/font_size_13" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="13dp"
+            android:text="取消"
+            android:textColor="@color/cl_347eba"
+            android:textSize="@dimen/font_size_15" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_e5e5e5" />
+
+    <LinearLayout
+        android:id="@+id/ll_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/history_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!--历史搜索-->
+            <LinearLayout
+                android:id="@+id/ll_history_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:text="历史记录"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="@dimen/font_size_12" />
+
+                <ImageView
+                    android:id="@+id/iv_search_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/icon_search_delete" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <!--搜索为空-->
+        <LinearLayout
+            android:id="@+id/search_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/no_search_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="抱歉，没有找到“ ”相关的视频"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/search_input"
+                android:textColor="@color/cl_999999"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/search_key"
+                android:textColor="@color/cl_999999"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+        <!--热门搜索-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:text="大家最常搜索"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_12" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <!--搜索结果-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="燕 相关视频"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_11" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <!--    <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@color/white"
+           android:orientation="horizontal"
+         >
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+
+               <TextView
+                   android:id="@+id/tv_search_synthesize"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="综合"
+                   android:textColor="@color/cl_00bceb"
+                   android:textSize="@dimen/font_size_13" />
+
+               <View
+                   android:id="@+id/view_search_synthesize"
+                   android:layout_width="30dp"
+                   android:layout_height="2dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:background="@color/cl_00bceb" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+
+               <TextView
+                   android:id="@+id/tv_search_video"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="视频"
+                   android:textColor="@color/cl_333333"
+                   android:textSize="@dimen/font_size_13" />
+
+               <View
+                   android:id="@+id/view_search_video"
+                   android:layout_width="30dp"
+                   android:layout_height="2dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:background="@color/cl_00bceb"
+                   android:visibility="gone" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+
+               <TextView
+                   android:id="@+id/tv_search_building"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="楼盘"
+                   android:textColor="@color/cl_333333"
+                   android:textSize="@dimen/font_size_13" />
+
+               <View
+                   android:id="@+id/view_search_building"
+                   android:layout_width="30dp"
+                   android:layout_height="2dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:background="@color/cl_00bceb"
+                   android:visibility="gone" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+
+               <TextView
+                   android:id="@+id/tv_search_region"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="区域"
+                   android:textColor="@color/cl_333333"
+                   android:textSize="@dimen/font_size_13" />
+
+               <View
+                   android:id="@+id/view_search_region"
+                   android:layout_width="30dp"
+                   android:layout_height="2dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:background="@color/cl_00bceb"
+                   android:visibility="gone" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+
+               <TextView
+                   android:id="@+id/tv_search_counselor"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerInParent="true"
+                   android:gravity="center"
+                   android:text="顾问"
+                   android:textColor="@color/cl_333333"
+                   android:textSize="@dimen/font_size_13" />
+
+               <View
+                   android:id="@+id/view_search_counselor"
+                   android:layout_width="30dp"
+                   android:layout_height="2dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:background="@color/cl_00bceb"
+                   android:visibility="gone" />
+           </RelativeLayout>
+
+
+       </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_alignParentBottom="true"
+           android:background="@color/cl_e5e5e5" />
+
+       <android.support.v4.view.ViewPager
+           android:id="@+id/vp_search_result"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+
+
+   </LinearLayout>-->
+</LinearLayout>

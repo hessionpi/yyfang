@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_live_finish"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:textColor="@color/white"
+        android:text="@string/live_end_tips"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:background="@color/cl_dddddd"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/cl_eaeaea"
+            android:textSize="@dimen/font_size_12"
+            android:text="@string/live_achievement"
+            />
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:background="@color/cl_dddddd"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/ic_live_achievement"
+        tools:ignore="contentDescription"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <!-- 直播时长 -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white"
+                tools:text="12:36"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textSize="@dimen/font_size_11"
+                android:textColor="@color/white"
+                android:text="@string/live_time_tips"
+                 />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cl_dddddd"
+            >
+        </View>
+
+        <!-- 观看人数 -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white"
+                tools:text="2568789"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textSize="@dimen/font_size_11"
+                android:textColor="@color/white"
+                android:text="@string/live_members_tips"
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cl_dddddd"
+            >
+        </View>
+
+        <!-- 获赞数量 -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_admires"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                tools:text="74545"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textSize="@dimen/font_size_11"
+                android:textColor="@color/white"
+                android:text="@string/live_admires_tips"
+                 />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/btn_return_home"
+        android:textSize="@dimen/font_size_15"
+        android:textColor="@color/white"
+        android:background="@drawable/button_return_home_page"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/font_size_11"
+        android:textColor="@color/cl_cccccc"
+        android:text="@string/tips_playback_create"
+        />
+</LinearLayout>

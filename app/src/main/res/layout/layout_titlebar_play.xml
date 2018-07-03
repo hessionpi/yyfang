@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_gravity="top"
+    tools:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="25dp"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/ic_nav_back_w" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="及开放和认可减肥而健康法尔加客户伏尔离开购买记录领款人工具类卡通人米"
+        />
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center_vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="6dp"
+        android:src="@drawable/ic_nav_more" />
+</FrameLayout>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="tag_color">
+        <item>@color/cl_f86b4a</item>
+        <item>@color/cl_1ccec8</item>
+        <item>@color/cl_53c3ed</item>
+        <item>@color/cl_ffa50f</item>
+        <item>@color/cl_749afc</item>
+        <item>@color/cl_ea7291</item>
+
+    </integer-array>
+    <integer-array name="tag_drawable">
+        <item>@drawable/shape_label1</item>
+        <item>@drawable/shape_label2</item>
+        <item>@drawable/shape_label3</item>
+        <item>@drawable/shape_label4</item>
+        <item>@drawable/shape_label5</item>
+        <item>@drawable/shape_label6</item>
+
+    </integer-array>
+
+
+    <integer-array name="type_color">
+        <item>@color/cl_00bceb</item>
+        <item>@color/cl_ff8001</item>
+    </integer-array>
+    <integer-array name="type_drawable">
+        <item>@drawable/shape_building_tag_bg1</item>
+        <item>@drawable/shape_building_tag_bg2</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/icon_man"
+        tools:ignore="contentDescription"
+        />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/iv_avatar"
+        android:textColor="@color/cl_333333"
+        android:textSize="@dimen/font_size_14"
+        tools:text="我们那嘎达"
+        />
+
+    <TextView
+        android:id="@+id/tv_createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/cl_999999"
+        android:textSize="@dimen/font_size_10"
+        tools:text="10分钟前"
+        />
+
+    <TextView
+        android:id="@+id/tv_publish_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_alignStart="@id/tv_nickname"
+        android:layout_below="@id/tv_nickname"
+        android:textColor="@color/c9"
+        android:textSize="@dimen/font_size_13"
+        tools:text="你这房子现在多少钱了？什么时候可以看房？"
+        />
+
+    <TextView
+        android:id="@+id/tv_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:paddingStart="10dp"
+        android:paddingTop="12dp"
+        android:layout_alignStart="@id/tv_nickname"
+        android:layout_below="@id/tv_publish_comment"
+        android:textColor="@color/cl_999999"
+        android:textSize="@dimen/font_size_12"
+        tools:text="评论我：我现在不想卖了，最近这片区域涨价。"
+        android:background="@drawable/ic_interactive_msg_quote"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv_nickname"
+        android:layout_below="@id/tv_quote"
+        >
+
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_406599"
+            tools:text="视频：带你去看东戴河了"
+            />
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="end|center_vertical"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_406599"
+            android:text="@string/reply"
+            android:drawableStart="@drawable/ic_comment"
+            android:drawablePadding="6dp"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

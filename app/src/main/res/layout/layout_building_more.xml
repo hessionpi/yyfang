@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_buinding_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="48dp">
+
+</android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="110dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/font_size_13"
+            android:background="@drawable/shape_login_grey_bg"/>
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="220dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="@dimen/font_size_13"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_blue_bg"/>
+    </LinearLayout>
+</RelativeLayout>

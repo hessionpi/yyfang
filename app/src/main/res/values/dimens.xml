@@ -1,0 +1,63 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>-->
+
+    <!--标题栏文字大小-->
+    <dimen name="font_size_titlebar">17sp</dimen>
+    <dimen name="height_toolbar">48dp</dimen>
+    <dimen name="height_titlebar">40dp</dimen>
+    <!--  底部导航  -->
+    <dimen name="height_navigation_bottom">46dp</dimen>
+    <dimen name="tab_icon_image_size">24dp</dimen>
+    <dimen name="tab_text_size">10sp</dimen>
+    <dimen name="tab_padding_horizontal">0dp</dimen>
+    <dimen name="tab_padding_vertical">2dp</dimen>
+    <dimen name="tab_icon_text_margin">2dp</dimen>
+
+    <!--  定义文字大小 -->
+    <dimen name="font_size_8">8sp</dimen>
+    <dimen name="font_size_9">9sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_11">11sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_13">13sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_17">17sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_19">19sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_21">21sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+
+    <dimen name="live_btn_size">35dp</dimen>
+
+    <!-- 飘星 -->
+    <dimen name="heart_anim_bezier_x_rand">50.0dp</dimen>
+    <dimen name="heart_anim_init_x">50.0dp</dimen>
+    <dimen name="heart_anim_init_y">25.0dp</dimen>
+    <dimen name="heart_anim_length">100.0dp</dimen>
+    <dimen name="heart_anim_length_rand">350.0dp</dimen>
+    <dimen name="heart_anim_x_point_factor">30.0dp</dimen>
+
+    <dimen name="sub_content">14sp</dimen>
+
+    <!-- UGC***********************************-->
+    <dimen name="ugc_progress_cursor">2dp</dimen>
+    <dimen name="ugc_progress_min_pos">2dp</dimen>
+    <dimen name="ugc_progress_divider">1dp</dimen>
+    <!-- UGC***********************************-->
+
+
+
+
+
+    <!-- 视频进度条 -->
+    <dimen name="video_progress_height">50dp</dimen>
+    <dimen name="video_thumbnail_width">50dp</dimen>
+    <dimen name="repeat_slider_width">26dp</dimen>
+</resources>

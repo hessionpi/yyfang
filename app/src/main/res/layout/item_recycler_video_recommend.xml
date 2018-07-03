@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_front_cover"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:src="@color/colorPrimary" />
+
+            <!-- 上传进度展示 -->
+            <LinearLayout
+                android:id="@+id/ll_uploading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ProgressBar
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:indeterminateDrawable="@drawable/partial_loading" />
+
+                    <TextView
+                        android:id="@+id/tv_upload_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        tools:text="12%"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_13" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/uploading"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_13" />
+            </LinearLayout>
+
+            <!-- 上传失败显示重新上传和删除操作 -->
+            <LinearLayout
+                android:id="@+id/ll_upload_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_14"
+                    android:text="@string/warning_upload_again"
+                    android:textColor="@color/white"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_upload_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/upload_again"
+                        android:textSize="@dimen/font_size_12"
+                        android:textColor="@color/white"
+                        android:background="@drawable/shape_outer_line_white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="70dp"
+                        android:gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/delete"
+                        android:textSize="@dimen/font_size_12"
+                        android:textColor="@color/white"
+                        android:background="@drawable/shape_outer_line_white"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/cl_e6ffffff"
+                android:shadowColor="@color/cl_333333"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="4"
+                android:textSize="@dimen/font_size_14"
+                tools:text="东戴河冬天会下雪吗？下雪漂亮吗？那鬼才知沪高铁热交换核桃仁金龟换酒看后感" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_title"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="7dp">
+
+              <!--  <FrameLayout
+                    android:id="@+id/fl_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="7dp"
+                        android:src="@drawable/icon_man"
+                        tools:ignore="contentDescription" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus_v"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/ic_user_vip"
+                        android:visibility="gone"
+                        tools:ignore="contentDescription" />
+                </FrameLayout>-->
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/icon_man"
+                    tools:ignore="contentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_publisher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/iv_avatar"
+                    android:textStyle="bold"
+                    android:textColor="@color/cl_ccffffff"
+                    android:textSize="@dimen/font_size_11"
+                    android:shadowColor="@color/cl_333333"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"
+                    tools:text="张绍忠" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        tools:text="美女职业顾问，带你看北京总价最低的地铁楼盘！"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/hot_live_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_status"
+                    android:layout_width="11dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_living"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    tools:text="正在直播中"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/hot_location_bg"
+                android:text="东戴河"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_10" />
+
+            <TextView
+                android:id="@+id/tv_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/hot_location_bg"
+                android:text="MOMA白金海"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_10" />
+        </LinearLayout>
+        <TextView
+android:id="@+id/publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_cover"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            tools:text="已发布：7-12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_10"
+            />
+    <!--    <TextView
+            android:id="@+id/tv_max_viewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_cover"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            tools:text="78946465人已观看直播"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_10"
+            android:background="@drawable/hot_live_bg"
+            />-->
+    </RelativeLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="12dp"
+        android:layout_below="@id/iv_img"
+        android:background="@color/colorLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_watch_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="观看1324"
+            android:textColor="@color/cl_666666"
+            android:textSize="@dimen/font_size_10" />
+        <View
+
+            android:layout_width="0.5dp"
+            android:layout_height="10dp"
+            android:background="@color/colorLine" />
+        <TextView
+            android:id="@+id/favorite_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收藏1324"
+            android:textColor="@color/cl_666666"
+            android:textSize="@dimen/font_size_10" />
+        <View
+
+            android:layout_width="0.5dp"
+            android:layout_height="10dp"
+            android:background="@color/colorLine" />
+        <TextView
+            android:id="@+id/talk_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="评论1324"
+            android:textColor="@color/cl_666666"
+            android:textSize="@dimen/font_size_10" />
+
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLine" />
+</LinearLayout>

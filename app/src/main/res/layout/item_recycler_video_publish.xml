@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_front_cover"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:src="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="8dp"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:textColor="@color/cl_e6ffffff"
+            android:shadowColor="@color/cl_333333"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="4"
+            android:textSize="@dimen/font_size_13"
+            tools:text="东戴河冬天会下雪吗？下雪漂亮吗？那鬼才知沪高铁热交换核桃仁金龟换酒看后感" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

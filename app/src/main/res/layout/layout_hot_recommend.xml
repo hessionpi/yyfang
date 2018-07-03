@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yiyanf.fang.ui.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_hot_recommend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_banner_ads"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/banner_ads"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <com.yiyanf.fang.ui.widget.CircleIndicator
+                android:id="@+id/banner_ads_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:gravity="center">
+
+            </com.yiyanf.fang.ui.widget.CircleIndicator>
+        </FrameLayout>
+
+        <!--直播预告-->
+        <include
+            android:id="@+id/rl_live_forecast"
+            layout="@layout/layout_live_forecast"
+            />
+
+        <!--精彩直播-->
+        <LinearLayout
+            android:id="@+id/ll_wonderful_live"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_live"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:drawablePadding="6dp"
+                android:drawableStart="@drawable/shape_vertical_line"
+                android:gravity="start|center_vertical"
+                android:text="@string/live"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:id="@+id/tv_live_title"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                tools:text="美女职业顾问，带你看北京总价最低的地铁楼盘！"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_front_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    tools:src="@drawable/ic_video"
+                    android:background="@color/black"
+                    tools:ignore="contentDescription"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/hot_live_bg"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_living"
+                            android:layout_width="11dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_living"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_living_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="@string/living"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_10" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/hot_location_bg"
+                        tools:text="东戴河"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_10" />
+
+                    <TextView
+                        android:id="@+id/tv_building"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/hot_location_bg"
+                        tools:text="MOMA白金海"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_10" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <!--壹眼看透城市迷雾-->
+        <LinearLayout
+            android:id="@+id/ll_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/shape_vertical_line"
+                    android:text="壹眼看透楼市迷雾"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_13" />
+
+                <TextView
+                    android:id="@+id/tv_submission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/shape_hot_blue_bg"
+                    android:gravity="center"
+                    android:text="有奖投稿"
+                    android:textColor="@color/cl_66d7f3"
+                    android:textSize="@dimen/font_size_10" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:id="@+id/tv_article_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@color/white"
+                android:paddingBottom="7dp"
+                android:paddingTop="12dp"
+                tools:text="石家庄乐城国际贸易城的乐与怒二房和人格和人家看过他人健康该接口他如果牛头人尽可能给他人健康给你听尽可"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_style"
+                android:gravity="center"
+                tools:text="房友：香蕉都是不拿拿"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_10" />
+
+            <TextView
+                android:id="@+id/tv_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:background="@color/white"
+                android:lineSpacingExtra="5dp"
+                tools:text="这应该是最近最火的一个楼盘了，马云投资等诸多光环加身，但你看到他的另一面了吗？日丰日放假俄日购房金额"
+                android:textColor="@color/cl_888888"
+                android:textSize="@dimen/font_size_10" />
+        </LinearLayout>
+
+
+        <!--精彩视频-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_video"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:drawablePadding="6dp"
+                android:drawableStart="@drawable/shape_vertical_line"
+                android:gravity="left|center_vertical"
+                android:text="精彩视频"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    tools:listitem="@layout/item_recycler_vedio"
+                    >
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!-- 圈子 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:drawablePadding="6dp"
+                android:drawableStart="@drawable/shape_vertical_line"
+                android:gravity="left|center_vertical"
+                android:text="TA刚刚在东戴河圈子里说"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_img"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="13dp"
+                    tools:src="@drawable/loading" />
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/iv_img"
+                    android:layout_below="@id/iv_img"
+                    android:layout_marginTop="6dp"
+                    tools:text="不拿拿"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_11" />
+
+                <View
+                    android:id="@+id/line_vertical"
+                    android:layout_width="0.5dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@id/iv_img"
+                    android:background="@color/colorLine" />
+
+                <TextView
+                    android:id="@+id/tv_talk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toEndOf="@id/line_vertical"
+                    android:lineSpacingExtra="5dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    tools:text="礼拜一跟一个顾问看了几个东戴河的楼盘，感觉有点贵呀，大家觉得这地方有投资必要吗？"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_11" />
+
+               <!-- <TextView
+                    android:id="@+id/tv_reply_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_talk_title"
+                    android:layout_below="@id/tv_talk_title"
+                    android:layout_marginTop="16dp"
+                    android:text="已有3位置业顾问，4位热心好友房友回复"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="@dimen/font_size_10" />
+                -->
+
+                <TextView
+                    android:id="@+id/tv_reply_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_talk"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_reply"
+                    tools:text="4回复"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_9" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!--本月魅力顾问-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:drawablePadding="6dp"
+                android:drawableStart="@drawable/shape_vertical_line"
+                android:gravity="left|center_vertical"
+                android:text="本月魅力顾问"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLine" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_consultants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    tools:listitem="@layout/item_recycler_counselor"
+                    >
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.yiyanf.fang.ui.widget.MyScrollView>

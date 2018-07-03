@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog_building_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_counselor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:text="该楼盘优质置业顾问"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_15"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_building_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_counselor"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="联系顾问全面了解楼盘动态" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_building_dynamic">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/empty_mine"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空空如也"
+            android:textSize="@dimen/font_size_12"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/cl_bbbbbb"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_building_star"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp">
+
+    </android.support.v7.widget.RecyclerView>
+  </FrameLayout>
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_close"/>
+</RelativeLayout>

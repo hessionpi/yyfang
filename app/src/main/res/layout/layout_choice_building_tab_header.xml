@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/default_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="默认排序"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/average_price_low"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="均价最低"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/new_buinding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="上架最新"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/more_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:text="最多讨论"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/more_look"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:text="最多浏览"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />
+    </LinearLayout>
+
+</LinearLayout>
+<View
+android:layout_width="match_parent"
+android:layout_height="0.5dp"
+android:background="@color/cl_e5e5e5"
+android:layout_alignParentBottom="true" />
+<android.support.v7.widget.RecyclerView
+android:id="@+id/rv_selected"
+android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white"
+android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e5e5e5"
+        android:layout_alignParentBottom="true" />
+    </LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            >
+
+            <com.yiyanf.fang.ui.widget.colortrackview.ColorTrackTabLayout
+                android:id="@+id/tab_vod"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/cl_00bceb"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/cl_00bceb"
+                app:tabTextAppearance="@style/TextAppearanceBig"
+                app:tabTextColor="@color/cl_333333"
+                >
+            </com.yiyanf.fang.ui.widget.colortrackview.ColorTrackTabLayout>
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="5dp"
+                android:scaleType="center"
+                android:background="@drawable/ic_shadow_add_titlebar"
+                android:src="@drawable/ic_filter"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_filter_result"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/video_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            >
+        </android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            android:drawableStart="@drawable/ic_sort"
+            android:drawablePadding="5dp"
+            android:textSize="@dimen/font_size_13"
+            android:textColor="@color/white"
+            android:text="@string/sort"
+            android:background="@drawable/pusher_info_background"
+            />
+    </FrameLayout>
+
+</LinearLayout>

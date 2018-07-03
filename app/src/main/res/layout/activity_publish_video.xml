@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.yiyanf.fang.ui.activity.PublishVideoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/iv_close_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/ic_record_close"
+            tools:ignore="contentDescription"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_titlebar"
+            android:text="@string/nav_publish"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_252525"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_publish_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/guide_page1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_edit_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/font_size_12"
+                    android:textColor="@color/white"
+                    android:text="@string/cover_edit"
+                    android:background="@drawable/shape_video_cover_edit_bg"
+                    />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/cl_252525"
+                />
+
+            <EditText
+                android:id="@+id/et_video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="32dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:inputType="textMultiLine"
+                android:maxLength="24"
+                android:background="@drawable/shape_publish_video_input"
+                android:textSize="@dimen/font_size_13"
+                android:textColor="@color/cl_7a7a7a"
+                android:textColorHint="@color/cl_7a7a7a"
+                android:hint="@string/hint_publish_video_title"
+                />
+
+            <com.yiyanf.fang.ui.widget.CountEditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="8dp"
+                app:ce_edit_text_color="@color/cl_7a7a7a"
+                app:ce_edit_text_size="13px"
+                app:ce_count_text_size="13px"
+                app:ce_maxLength="50"
+                app:ce_countMode="Percentage"
+                app:ce_hint="@string/hint_publish_video_desc"
+                >
+
+            </com.yiyanf.fang.ui.widget.CountEditText>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="8dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    android:background="@drawable/shape_publish_video_input"
+                    android:textSize="@dimen/font_size_13"
+                    android:textColor="@color/cl_7a7a7a"
+                    android:textColorHint="@color/cl_7a7a7a"
+                    android:hint="@string/hint_publish_video_desc"
+                    tools:text="今天代码都不贴了，源码的注释写的很详细，相信阅读起来应该没有什么困难。对于喜欢研究Android特效果然"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_statistics_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_13"
+                    tools:text="7/50"
+                    />
+            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/btn_video_publish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16"
+                android:text="@string/nav_publish"
+                android:background="@drawable/ic_btn_publish"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

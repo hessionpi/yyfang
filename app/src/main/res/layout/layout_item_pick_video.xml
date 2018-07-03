@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_video_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/tv_video_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="7dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_10"
+        android:text="00:52"
+        android:background="@drawable/pickvideo_duration_background"
+        />
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yiyanf.fang.ui.widget.StickyRecyclerLayout
+        android:id="@+id/stickylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/id_topview"
+            layout="@layout/layout_choice_building_top_header" />
+
+        <include
+            android:id="@+id/id_indicator"
+            layout="@layout/layout_choice_building_tab_header" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_choice_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+    </com.yiyanf.fang.ui.widget.StickyRecyclerLayout>
+   <!-- <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="排序"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/icon_sort"
+        android:drawablePadding="3dp"
+        android:background="@drawable/shape_sort_text_bg"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"/>-->
+</RelativeLayout>
+

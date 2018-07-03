@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingBottom="15dp"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/fl_frontcover"
+        android:layout_width="120dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_video_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:gravity="center_horizontal"
+            android:src="@drawable/load_failed_nonet_icon">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_video_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="2dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/colorLine"
+            android:textSize="@dimen/font_size_9"
+            tools:text="08:15"
+            android:background="@drawable/pusher_info_background"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fl_frontcover"
+        android:layout_alignTop="@id/fl_frontcover"
+        android:layout_alignBottom="@id/fl_frontcover"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13"
+            android:text="美女置业顾问带你去看房啦，还不准备好money，等的就是你哦啊，附件二开放进入及热咖啡进入开"
+            />
+
+        <TextView
+            android:id="@+id/tv_play_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_11"
+            android:text="12568次播放"
+            />
+    </FrameLayout>
+
+
+
+</RelativeLayout>

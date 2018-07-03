@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_showroom"
+    android:layout_width="match_parent"
+    android:layout_height="37dp"
+    android:gravity="center"
+    tools:text="A户型（一室一厅）"
+    android:textColor="@color/selector_textcolor_category"
+    android:textSize="@dimen/font_size_11"
+    />
+

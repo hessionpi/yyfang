@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/shape_mine_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_auth_mine" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:text="主力销售楼盘"
+        android:textColor="@color/cl_333333"
+        android:textSize="@dimen/font_size_13" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mine_building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+      <!--  <ImageView
+            android:id="@+id/unfold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:paddingTop="100dp"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="10dp"
+           android:src="@drawable/unfold" />-->
+    </LinearLayout>
+</LinearLayout>

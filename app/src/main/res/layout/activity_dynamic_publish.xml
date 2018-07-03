@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBg"
+    tools:context="com.yiyanf.fang.ui.activity.PublishVideoActivity">
+
+    <com.yiyanf.fang.ui.widget.ToolbarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionLeftBackground="@drawable/back_img"
+        app:actionRightText="@string/commit"
+        app:titleText = "@string/publish_dynamic"
+        >
+    </com.yiyanf.fang.ui.widget.ToolbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:minHeight="120dp"
+            android:gravity="top"
+            android:hint="分享区域或楼盘新鲜动态..."
+            android:textColorHint="@color/cl_999999"
+            android:textSize="@dimen/font_size_15"
+            android:background="@null"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_grid_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_00bceb"
+            android:text="将动态关联到区域或楼盘"
+            android:drawableStart="@drawable/ic_dynamic_location_disable"
+            android:drawablePadding="6dp"
+            android:background="@drawable/publish_dynamic_location_bg"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/black10unalpha"
+    >
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.tencent.rtmp.ui.TXCloudVideoView>
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/ic_close_live"
+        android:background="@null"
+        tools:ignore="contentDescription"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15"
+            android:text="@string/select_orientation"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_screen_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_screen_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/selector_orientation_vertical"
+                android:button="@null"
+                android:checked="true"
+                android:text="@string/orientation_vertical"
+                android:textColor="@color/white"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_screen_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="50dp"
+                android:drawableTop="@drawable/selector_orientation_horizontal"
+                android:button="@null"
+                android:textColor="@color/white"
+                android:text="@string/orientation_horizontal"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_live_start"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/white"
+            android:text="@string/live_start"
+            android:background="@drawable/shape_login_blue_bg"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_9"
+            android:text="@string/live_advice"
+            />
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

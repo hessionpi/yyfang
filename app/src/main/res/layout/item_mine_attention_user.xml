@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/loading" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="天天"
+        android:textColor="@color/cl_222222"
+        android:textSize="@dimen/font_size_13" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_more"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/hot_region_bg">
+
+    <ImageView
+        android:id="@+id/iv_cover_building"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="22"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/load_failed_nonet_icon">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_building_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_14"
+            tools:text="祝福红城香榭丽" />
+
+        <TextView
+            android:id="@+id/tv_building_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10"
+            tools:text="北京市昌平县城幸福东大街105号" />
+
+        <LinearLayout
+            android:id="@+id/ll_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:gravity="left|center_vertical"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            >
+
+            <!--<TextView
+                android:id="@+id/tv_label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_label1"
+                tools:text="住宅"
+                android:textColor="@color/cl_f86b4a"
+                android:textSize="@dimen/font_size_9" />
+
+            <TextView
+                android:id="@+id/tv_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_label2"
+                tools:text="五证齐全"
+                android:textColor="@color/cl_1ccec8"
+                android:textSize="@dimen/font_size_9" />
+
+            <TextView
+                android:id="@+id/tv_label3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_label3"
+                tools:text="车位充足"
+                android:textColor="@color/cl_53c3ed"
+                android:textSize="@dimen/font_size_9" />
+
+            <TextView
+                android:id="@+id/tv_label4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_label4"
+                tools:text="花园洋房"
+                android:textColor="@color/cl_ffa50f"
+                android:textSize="@dimen/font_size_9" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avg_price"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="@dimen/font_size_9" />
+
+                <TextView
+                    android:id="@+id/tv_avg_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_9"
+                    tools:text="18000元/平" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:textColor="@color/cl_666666"
+                android:textSize="@dimen/font_size_9"
+                tools:text="80万元/套" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/pusher_info_background"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:paddingStart="1dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="1dp"
+    tools:ignore="contentDescription">
+
+    <ImageView
+        android:id="@+id/iv_head_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_man" />
+
+    <ImageView
+        android:id="@+id/iv_record_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_head_icon"
+        android:background="@drawable/liveshow_item_dot"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_record_ball"
+        >
+
+        <TextView
+            android:id="@+id/tv_broadcasting_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:paddingTop="2.5dp"
+            android:drawablePadding="4dp"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:text="桑挖地啦"
+            />
+
+        <TextView
+            android:id="@+id/tv_host_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_record_ball"
+            android:layout_toEndOf="@+id/iv_head_icon"
+            android:layout_toRightOf="@+id/iv_head_icon"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:text="迪丽热巴"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ll_name"
+        android:textSize="@dimen/font_size_11"
+        android:textColor="@color/white"
+        android:text="关注"
+        android:background="@drawable/live_attention_background"
+        android:visibility="gone"
+        />
+
+    <!--<TextView
+        android:id="@+id/tv_member_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="5dp"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/tv_broadcasting_time"
+        android:layout_alignLeft="@+id/tv_broadcasting_time" />-->
+
+</RelativeLayout>

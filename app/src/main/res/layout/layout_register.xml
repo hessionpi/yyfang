@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/icon_login_logo" />
+
+    <com.yiyanf.fang.ui.widget.ClearEditText
+        android:id="@+id/register_number"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:hint="使用手机号注册"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="@color/cl_333333"
+        android:textColorHint="@color/cl_999999"
+        android:textSize="@dimen/font_size_14" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/cl_e5e5e5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/register_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="填写验证码"
+            android:maxLength="6"
+            android:background="@null"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/cl_333333"
+            android:textColorHint="@color/cl_999999"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:background="@color/cl_e5e5e5" />
+
+        <TextView
+            android:id="@+id/gain_code"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+         android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="获取验证码"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/cl_main"
+            android:textSize="@dimen/font_size_11" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e5e5e5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <com.yiyanf.fang.ui.widget.ClearEditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:hint="设置6-16位密码"
+        android:minLines="6"
+        android:maxLength="16"
+        android:inputType="textPassword"
+        android:textColor="@color/cl_333333"
+        android:textColorHint="@color/cl_999999"
+        android:textSize="@dimen/font_size_14" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/cl_e5e5e5"/>
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_grey_bg"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="点击注册即同意"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/tv_service_protocol_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《壹眼房用户服务条款》"
+            android:textColor="@color/cl_main"
+            android:textSize="@dimen/font_size_10" />
+    </LinearLayout>
+</LinearLayout>
